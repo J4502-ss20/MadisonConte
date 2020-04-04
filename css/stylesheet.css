@@ -1,0 +1,146 @@
+p {
+  color: black;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  color: #5d5c5c;
+  font-family: 'Roboto Slab', Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+ul {
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#header {
+  background-color: white;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+  }
+
+#nav {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+		padding: 0;
+		list-style-type: none;
+	}
+#nav li {
+	  list-style-type: none;
+	  float: left;
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  border-bottom: 1px solid #ccc;
+	}
+
+#nav a:link, #nav a:visited {
+  display: block;
+  color: #ffffff;
+  background-color: #5d5c5c;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+	text-decoration: none;
+  padding: 10px;
+
+}
+
+#nav a:hover, .nav a:active {
+  background-color: #363636;
+}
+
+#ul {
+		display:  flex;
+		flex-direction: row;
+}
+
+.headshot {
+  display: flex;
+  flex-direction: row;
+	margin: 20px;
+	width: 100%;
+}
+.headshot img {
+	  display: none;
+	}
+
+@media screen and (min-width: 600px) {
+	.container {
+		width: 80%;
+	}
+	nav ul {
+			flex-flow: row;
+			justify-content: space-between;
+	}
+	.headshot img {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.headshot {
+		width: 25%;
+		max-width: 200px;
+		float: left;
+		margin-right: 20px;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+		#nav {
+			flex-direction: row;
+		}
+
+		.container {
+		display: grid;
+		grid-template-columns: 150px 1fr 1fr;
+		grid-gap: 20px;
+		grid-template-areas:
+				"a b b";
+			}
+			.headshot {
+				width: 100%;
+				margin: 10px;
+				grid-area: a;
+			}
+
+			.section {
+				grid-area: b;
+			}
+}
+
+
+@media screen and (min-width:1000px) {
+	.container {
+		display: grid;
+		grid-template-columns: 150px 1fr 1fr 1fr;
+		grid-gap: 20px;
+		grid-template-areas:
+				"a a b b";
+		}
+}
