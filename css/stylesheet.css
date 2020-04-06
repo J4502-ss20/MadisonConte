@@ -80,14 +80,8 @@ ul {
 }
 
 .headshot {
-  display: flex;
-  flex-direction: row;
-	margin: 20px;
-	width: 100%;
+  display: none;
 }
-.headshot img {
-	  display: none;
-	}
 
 @media screen and (min-width: 600px) {
 	.container {
@@ -97,14 +91,10 @@ ul {
 			flex-flow: row;
 			justify-content: space-between;
 	}
-	.headshot img {
-		display: block;
-		width: 100%;
-		margin-top: 10px;
-	}
 
 	.headshot {
-		width: 25%;
+    display: block;
+    width: 50%;
 		max-width: 200px;
 		float: left;
 		margin-right: 20px;
