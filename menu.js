@@ -4,8 +4,8 @@ $(document).ready(function() {
   });
 
   $(window).resize(function() {
-	   if (  $(window).width() > 700 ) {
+	   if (  $(window).width() > 600 ) {
 		$('#nav ul').removeAttr('style');
 	 }
 	});
-}); 
+});
