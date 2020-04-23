@@ -139,13 +139,9 @@ h2 {
 
 	.headshot {
     display: block;
-    width: 50%;
-		max-width: 200px;
-		float: left;
-		margin-right: 20px;
+
 	}
 
-}
 
 @media screen and (min-width: 800px) {
 		#nav {
@@ -161,7 +157,6 @@ h2 {
 			}
 			.headshot {
 				width: 100%;
-				margin: 10px;
 				grid-area: a;
 			}
 
